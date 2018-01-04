@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scene" prefHeight="368.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <RadioButton fx:id="checkBtn" layoutX="80.0" layoutY="109.0" mnemonicParsing="false" text="Checking">
+         <toggleGroup>
+            <ToggleGroup fx:id="accountType" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="savBtn" layoutX="237.0" layoutY="109.0" mnemonicParsing="false" text="Savings" toggleGroup="$accountType" />
+      <Label layoutX="110.0" layoutY="26.0" prefHeight="18.0" prefWidth="156.0" text="Account Sign Up Form">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="77.0" text="Select an account type:" />
+      <Label layoutX="37.0" layoutY="163.0" text="Full Name:" />
+      <TextField fx:id="nameInput" layoutX="112.0" layoutY="159.0" prefHeight="22.0" prefWidth="204.0" />
+      <Label layoutX="21.0" layoutY="214.0" text="Account Number:" />
+      <TextField fx:id="numInput" layoutX="112.0" layoutY="210.0" prefHeight="22.0" prefWidth="204.0" />
+      <TextField fx:id="startB" layoutX="112.0" layoutY="235.0" prefHeight="22.0" prefWidth="204.0" />
+      <Label layoutX="28.0" layoutY="288.0" text="Interest Rate:" />
+      <TextField fx:id="minB" layoutX="112.0" layoutY="259.0" prefHeight="22.0" prefWidth="204.0" />
+      <Label layoutX="16.0" layoutY="239.0" text="Starting Balance:" />
+      <Label layoutX="37.0" layoutY="190.0" text="User ID:" />
+      <TextField fx:id="idInput" layoutX="112.0" layoutY="186.0" prefHeight="22.0" prefWidth="204.0" />
+      <Label layoutX="17.0" layoutY="263.0" text="Minimum Balance:" />
+      <TextField fx:id="intRate" layoutX="112.0" layoutY="284.0" prefHeight="22.0" prefWidth="204.0" />
+   </children>
+</AnchorPane>
